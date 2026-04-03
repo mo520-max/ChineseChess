@@ -1,4 +1,4 @@
-name: Build Android APK
+      name: Build Android APK
 
 on:
   push:
@@ -23,6 +23,13 @@ jobs:
     
     - name: Setup Android SDK
       uses: android-actions/setup-android@v3
+      with:
+        api-level: 34
+        build-tools: 34.0.0
+    
+    - name: Create local.properties
+      run: |
+        echo "sdk.dir=/usr/local/lib/android/sdk" > local.properties
     
     - name: Cache Gradle packages
       uses: actions/cache@v4
@@ -38,7 +45,7 @@ jobs:
       run: chmod +x gradlew
     
     - name: Build Debug APK
-      run: ./gradlew assembleDebug
+      run: ./gradlew assembleDebug --stacktrace
     
     - name: Upload Debug APK
       uses: actions/upload-artifact@v4
@@ -47,11 +54,10 @@ jobs:
         path: app/build/outputs/apk/debug/*.apk
     
     - name: Build Release APK
-      run: ./gradlew assembleRelease
+      run: ./gradlew assembleRelease --stacktrace
     
     - name: Upload Release APK
       uses: actions/upload-artifact@v4
       with:
         name: release-apk
         path: app/build/outputs/apk/release/*.apk
-        
