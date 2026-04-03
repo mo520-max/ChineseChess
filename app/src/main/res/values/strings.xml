@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">中国象棋</string>
+    
+    <!-- 主界面 -->
+    <string name="title_bluetooth">蓝牙对战</string>
+    <string name="title_wifi">局域网对战</string>
+    <string name="title_local">单机练习</string>
+    <string name="title_settings">设置</string>
+    
+    <!-- 游戏界面 -->
+    <string name="btn_start">开始游戏</string>
+    <string name="btn_pause">暂停</string>
+    <string name="btn_resume">继续</string>
+    <string name="btn_undo">悔棋</string>
+    <string name="btn_surrender">认输</string>
+    <string name="btn_draw">和棋</string>
+    <string name="btn_settings">设置</string>
+    <string name="btn_back">返回</string>
+    
+    <!-- 蓝牙界面 -->
+    <string name="bluetooth_host">作为主机</string>
+    <string name="bluetooth_client">作为从机</string>
+    <string name="bluetooth_scan">搜索设备</string>
+    <string name="bluetooth_connecting">连接中...</string>
+    <string name="bluetooth_connected">已连接</string>
+    <string name="bluetooth_disconnected">未连接</string>
+    
+    <!-- 局域网界面 -->
+    <string name="wifi_host">创建房间</string>
+    <string name="wifi_join">加入房间</string>
+    <string name="wifi_scan">搜索房间</string>
+    <string name="wifi_enter_ip">输入IP地址</string>
+    <string name="wifi_connect">连接</string>
+    
+    <!-- 设置 -->
+    <string name="setting_time_mode">时间模式</string>
+    <string name="setting_time_total">总时间</string>
+    <string name="setting_time_step">步时</string>
+    <string name="setting_sound">音效</string>
+    <string name="setting_vibration">震动</string>
+    <string name="setting_theme">棋盘主题</string>
+    
+    <!-- 游戏状态 -->
+    <string name="game_red_turn">红方走棋</string>
+    <string name="game_black_turn">黑方走棋</string>
+    <string name="game_red_win">红方胜</string>
+    <string name="game_black_win">黑方胜</string>
+    <string name="game_draw">和棋</string>
+    <string name="game_check">将军</string>
+    <string name="game_checkmate">将死</string>
+    
+    <!-- 提示信息 -->
+    <string name="msg_invalid_move">非法移动</string>
+    <string name="msg_not_your_turn">不是您的回合</string>
+    <string name="msg_connection_lost">连接断开</string>
+    <string name="msg_opponent_surrender">对方认输</string>
+    <string name="msg_draw_request">对方请求和棋</string>
+    <string name="msg_time_out">时间到</string>
+    
+    <!-- 对话框 -->
+    <string name="dialog_confirm">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_yes">是</string>
+    <string name="dialog_no">否</string>
+</resources>

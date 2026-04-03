@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主题色 -->
+    <color name="primary">#8B4513</color>
+    <color name="primary_dark">#5D2E0C</color>
+    <color name="primary_light">#D2691E</color>
+    <color name="accent">#FFD700</color>
+    
+    <!-- 棋盘颜色 -->
+    <color name="board_background">#F5DEB3</color>
+    <color name="board_line">#8B4513</color>
+    <color name="board_border">#5D2E0C</color>
+    
+    <!-- 棋子颜色 -->
+    <color name="piece_red">#DC143C</color>
+    <color name="piece_red_border">#8B0000</color>
+    <color name="piece_black">#2F4F4F</color>
+    <color name="piece_black_border">#000000</color>
+    <color name="piece_text_red">#DC143C</color>
+    <color name="piece_text_black">#000000</color>
+    
+    <!-- 高亮颜色 -->
+    <color name="highlight_selected">#90EE90</color>
+    <color name="highlight_valid">#98FB98</color>
+    <color name="highlight_last_move">#FFD700</color>
+    <color name="highlight_check">#FF6347</color>
+    
+    <!-- 文字颜色 -->
+    <color name="text_primary">#333333</color>
+    <color name="text_secondary">#666666</color>
+    <color name="text_light">#FFFFFF</color>
+    
+    <!-- 背景色 -->
+    <color name="background">#FFF8DC</color>
+    <color name="background_dark">#8B7355</color>
+    <color name="card_background">#FFFFFF</color>
+    
+    <!-- 按钮颜色 -->
+    <color name="button_normal">#8B4513</color>
+    <color name="button_pressed">#5D2E0C</color>
+    <color name="button_disabled">#A9A9A9</color>
+</resources>

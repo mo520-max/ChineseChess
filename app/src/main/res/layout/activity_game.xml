@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- 顶部信息栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- 黑方信息 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvBlackName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="黑方"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"/>
+
+            <TextView
+                android:id="@+id/tvBlackTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:00"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/piece_black"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+
+        <!-- 回合指示 -->
+        <TextView
+            android:id="@+id/tvTurn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="红方走棋"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:padding="12dp"
+            android:background="@drawable/bg_turn_indicator"/>
+
+        <!-- 红方信息 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvRedName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="红方"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"/>
+
+            <TextView
+                android:id="@+id/tvRedTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:00"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/piece_red"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 棋盘区域 -->
+    <com.chinesechess.ui.ChessBoardView
+        android:id="@+id/chessBoard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="8dp"/>
+
+    <!-- 底部按钮栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnUndo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_undo"
+            android:textSize="14sp"
+            android:layout_marginEnd="8dp"
+            app:cornerRadius="8dp"
+            style="@style/Button.Secondary"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPause"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_pause"
+            android:textSize="14sp"
+            android:layout_marginEnd="8dp"
+            app:cornerRadius="8dp"
+            style="@style/Button.Secondary"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDraw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_draw"
+            android:textSize="14sp"
+            android:layout_marginEnd="8dp"
+            app:cornerRadius="8dp"
+            style="@style/Button.Secondary"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSurrender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_surrender"
+            android:textSize="14sp"
+            app:cornerRadius="8dp"
+            style="@style/Button.Secondary"/>
+
+    </LinearLayout>
+
+</LinearLayout>

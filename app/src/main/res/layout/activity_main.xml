@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="中国象棋"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:layout_marginBottom="48dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_bluetooth"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        app:cornerRadius="12dp"
+        style="@style/Button.Primary"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnWifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_wifi"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        app:cornerRadius="12dp"
+        style="@style/Button.Primary"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLocal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_local"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        app:cornerRadius="12dp"
+        style="@style/Button.Primary"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_settings"
+        android:textSize="18sp"
+        android:padding="16dp"
+        app:cornerRadius="12dp"
+        style="@style/Button.Secondary"/>
+
+</LinearLayout>
